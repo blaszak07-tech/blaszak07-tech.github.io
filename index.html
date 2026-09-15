@@ -215,34 +215,6 @@
       font-weight: 650;
     }
 
-    .profile-stats {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 10px;
-      margin-top: 22px;
-    }
-
-    .stat {
-      padding: 14px 10px;
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      text-align: center;
-    }
-
-    .stat strong {
-      display: block;
-      font-size: 1.15rem;
-      line-height: 1.1;
-    }
-
-    .stat span {
-      display: block;
-      margin-top: 5px;
-      color: var(--muted);
-      font-size: 0.78rem;
-      font-weight: 700;
-    }
-
     section {
       padding: clamp(38px, 7vw, 78px) 0;
       border-top: 1px solid var(--line);
@@ -296,13 +268,12 @@
 
     .projects {
       display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 16px;
     }
 
     .project {
       display: flex;
-      min-height: 310px;
       flex-direction: column;
       padding: 22px;
       border: 1px solid var(--line);
@@ -328,18 +299,6 @@
       margin: 0;
       color: var(--muted);
       font-weight: 600;
-    }
-
-    .project a {
-      margin-top: auto;
-      padding-top: 22px;
-      color: var(--accent-dark);
-      font-weight: 900;
-      text-decoration: none;
-    }
-
-    .project a:hover {
-      text-decoration: underline;
     }
 
     .contact-band {
@@ -423,8 +382,7 @@
       }
 
       .skills-grid,
-      .projects,
-      .profile-stats {
+      .projects {
         grid-template-columns: 1fr;
       }
 
@@ -469,20 +427,6 @@
           <p>
             A growing portfolio of academic work, professional skills, and finance-focused projects that show how I communicate, analyze, and contribute to teams.
           </p>
-          <div class="profile-stats" aria-label="Portfolio highlights">
-            <div class="stat">
-              <strong>3</strong>
-              <span>Projects</span>
-            </div>
-            <div class="stat">
-              <strong>9</strong>
-              <span>Skills</span>
-            </div>
-            <div class="stat">
-              <strong>3</strong>
-              <span>Career Paths</span>
-            </div>
-          </div>
         </aside>
       </section>
 
@@ -512,29 +456,18 @@
         <div class="projects">
           <article class="project">
             <span class="project-number">Project 01</span>
-            <h3>Personal Portfolio Website</h3>
-            <p>
-              Designed and published this GitHub Pages portfolio to present my personal statement, skills, and selected work in one professional online space.
-            </p>
-            <a href="https://github.com/blaszak07-tech/blaszak07-tech.github.io" target="_blank" rel="noopener">View Code</a>
-          </article>
-
-          <article class="project">
-            <span class="project-number">Project 02</span>
             <h3>Neurothreads Print-on-Demand Business</h3>
             <p>
               Founded and operated a small print-on-demand apparel business, generating about $5,000 in gross revenue while managing products, pricing, listings, suppliers, customer issues, and profitability tracking.
             </p>
-            <a href="https://www.linkedin.com/in/shaun-blaszak" target="_blank" rel="noopener">View LinkedIn</a>
           </article>
 
           <article class="project">
-            <span class="project-number">Project 03</span>
+            <span class="project-number">Project 02</span>
             <h3>RUShopping Management Project</h3>
             <p>
               Collaborated on an Intro to Management business concept project for RUShopping, developing the mission statement, management approach, operating decisions, rationale, and final group presentation.
             </p>
-            <a href="#contact">Class Project Reference</a>
           </article>
         </div>
       </section>
@@ -548,7 +481,6 @@
           <div class="contact-actions">
             <a class="button" href="mailto:sb2895@scarletmail.rutgers.edu">Email Me</a>
             <a class="button" href="https://www.linkedin.com/in/shaun-blaszak" target="_blank" rel="noopener">LinkedIn</a>
-            <a class="button" href="https://github.com/blaszak07-tech" target="_blank" rel="noopener">GitHub</a>
           </div>
         </div>
       </section>
