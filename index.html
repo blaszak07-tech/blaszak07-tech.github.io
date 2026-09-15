@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Shaun Blaszak personal portfolio website.">
+  <meta name="description" content="Shaun Blaszak portfolio for accounting, finance, advisory, and consulting opportunities.">
   <title>Shaun Blaszak | Portfolio</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23111827'/%3E%3Cpath d='M18 42c4 4 9 6 15 6 8 0 13-4 13-10 0-5-3-8-10-10l-7-2c-4-1-6-3-6-6s3-5 8-5c4 0 8 1 12 4l3-7c-4-3-9-5-15-5-9 0-16 5-16 13 0 6 4 10 11 12l7 2c4 1 5 2 5 5s-2 4-6 4c-5 0-9-2-13-6l-1 5z' fill='%23f9fafb'/%3E%3C/svg%3E">
   <style>
@@ -192,29 +192,21 @@
     }
 
     .portrait {
-      display: grid;
       width: min(100%, 310px);
       aspect-ratio: 1;
       margin: 28px auto 22px;
-      place-items: center;
       border: 1px solid #cdd4df;
       border-radius: 8px;
-      background:
-        radial-gradient(circle at 30% 24%, rgba(15, 118, 110, 0.22), transparent 32%),
-        linear-gradient(135deg, #f4f7fb, #e5ebf4);
+      background: #e5ebf4;
+      overflow: hidden;
     }
 
-    .portrait span {
-      display: grid;
-      width: 46%;
-      aspect-ratio: 1;
-      place-items: center;
-      border-radius: 8px;
-      color: var(--white);
-      background: var(--ink);
-      font-size: clamp(2.8rem, 7vw, 5rem);
-      font-weight: 900;
-      line-height: 1;
+    .portrait img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 30%;
     }
 
     .profile-panel p {
@@ -378,6 +370,13 @@
       background: var(--white);
     }
 
+    .contact-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: flex-end;
+    }
+
     footer {
       width: min(1120px, calc(100% - 36px));
       margin: 0 auto;
@@ -410,6 +409,10 @@
       .contact-band {
         align-items: flex-start;
         flex-direction: column;
+      }
+
+      .contact-actions {
+        justify-content: flex-start;
       }
     }
 
@@ -451,20 +454,20 @@
           <p class="eyebrow">Personal Portfolio</p>
           <h1 id="intro-title">Shaun Blaszak</h1>
           <p class="statement">
-            I am a business-focused student building a professional brand around communication, technology, and practical problem solving.
+            I am an accounting and finance double major pursuing opportunities in investment banking, deal advisory, and financial consulting.
           </p>
           <div class="hero-actions">
             <a class="button primary" href="#projects">View Projects</a>
-            <a class="button secondary" href="https://github.com/blaszak07-tech" target="_blank" rel="noopener">GitHub Profile</a>
+            <a class="button secondary" href="https://www.linkedin.com/in/shaun-blaszak" target="_blank" rel="noopener">LinkedIn Profile</a>
           </div>
         </div>
 
         <aside class="profile-panel" aria-label="Portfolio profile summary">
-          <div class="portrait" aria-label="Shaun Blaszak initials portrait">
-            <span>SB</span>
+          <div class="portrait">
+            <img src="assets/headshot.png" alt="Headshot of Shaun Blaszak">
           </div>
           <p>
-            A growing portfolio of academic work, professional skills, and projects that show how I think, organize ideas, and build useful results.
+            A growing portfolio of academic work, professional skills, and finance-focused projects that show how I communicate, analyze, and contribute to teams.
           </p>
           <div class="profile-stats" aria-label="Portfolio highlights">
             <div class="stat">
@@ -472,12 +475,12 @@
               <span>Projects</span>
             </div>
             <div class="stat">
-              <strong>8</strong>
+              <strong>9</strong>
               <span>Skills</span>
             </div>
             <div class="stat">
-              <strong>1</strong>
-              <span>Goal</span>
+              <strong>3</strong>
+              <span>Career Paths</span>
             </div>
           </div>
         </aside>
@@ -491,12 +494,13 @@
         <div class="skills-grid">
           <div class="skill">Communication<span>Clear writing, presenting, and professional collaboration.</span></div>
           <div class="skill">Leadership<span>Taking ownership, staying organized, and helping groups move forward.</span></div>
+          <div class="skill">Teamwork<span>Working with others to complete projects and support shared goals.</span></div>
+          <div class="skill">Microsoft Excel<span>Organizing information, building spreadsheets, and working with data.</span></div>
+          <div class="skill">Microsoft Word<span>Creating polished written documents and professional materials.</span></div>
+          <div class="skill">Microsoft PowerPoint<span>Building presentations that explain ideas clearly and visually.</span></div>
           <div class="skill">Problem Solving<span>Breaking down goals, comparing options, and choosing practical next steps.</span></div>
-          <div class="skill">Technology<span>Using digital tools to create, research, organize, and publish work.</span></div>
-          <div class="skill">Research<span>Finding useful information and turning it into clear takeaways.</span></div>
-          <div class="skill">Project Planning<span>Managing deadlines, details, and deliverables from start to finish.</span></div>
-          <div class="skill">HTML & CSS<span>Building and editing clean, responsive webpages.</span></div>
-          <div class="skill">Professional Branding<span>Presenting experience and goals in a polished, employer-ready way.</span></div>
+          <div class="skill">Adaptability<span>Learning quickly, adjusting to feedback, and staying steady through change.</span></div>
+          <div class="skill">Hard Work<span>Staying disciplined, dependable, and focused on finishing strong.</span></div>
         </div>
       </section>
 
@@ -539,9 +543,13 @@
         <div class="contact-band">
           <div>
             <h2 id="contact-title">Let’s Connect</h2>
-            <p>This portfolio will continue to grow as I add more class projects, career materials, and examples of my work.</p>
+            <p>This portfolio will continue to grow as I add more finance, accounting, and professional development work.</p>
           </div>
-          <a class="button" href="https://github.com/blaszak07-tech" target="_blank" rel="noopener">Open GitHub</a>
+          <div class="contact-actions">
+            <a class="button" href="mailto:sb2895@scarletmail.rutgers.edu">Email Me</a>
+            <a class="button" href="https://www.linkedin.com/in/shaun-blaszak" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="button" href="https://github.com/blaszak07-tech" target="_blank" rel="noopener">GitHub</a>
+          </div>
         </div>
       </section>
     </main>
